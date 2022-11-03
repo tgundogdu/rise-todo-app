@@ -1,0 +1,58 @@
+@use "../../assets/styles/variable" as var;
+
+.o-button {
+  cursor: pointer;
+  padding: 6px 10px;
+  height: 36px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var.$defaultDark;
+  border-radius: var.$borderRadius;
+  background-color: var.$default;
+  color: var.$textColor;
+  font-size: var.$fontNormal;
+  transition: background-color 0.2s ease;
+  &:hover {
+    background-color: var.$defaultDark;
+  }
+  &.small {
+    padding: 4px 8px;
+    font-size: var.$fontSmall;
+  }
+  &.large {
+    padding: 8px 12px;
+    font-size: var.$fontLarge;
+  }
+  &.primary {
+    border-color: var.$primaryDark;
+    background-color: var.$primary;
+    color: var.$textLightColor;
+    &:hover {
+      background-color: var.$primaryDark;
+    }
+  }
+  &.danger {
+    border-color: var.$dangerDark;
+    background-color: var.$danger;
+    color: var.$textLightColor;
+    &:hover {
+      background-color: var.$dangerDark;
+    }
+  }
+  &.warning {
+    border-color: var.$warningDark;
+    background-color: var.$warning;
+    color: var.$textLightColor;
+    &:hover {
+      background-color: var.$warningDark;
+    }
+  }
+  &.success {
+    border-color: var.$successDark;
+    background-color: var.$success;
+    color: var.$textLightColor;
+    &:hover {
+      background-color: var.$successDark;
+    }
+  }
+}

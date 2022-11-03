@@ -1,0 +1,43 @@
+//background colors
+$bgColorDefault: #edeff5;
+$bgColorWhite: #ffffff;
+
+$formBgColor: #E8E8E8;
+$formBgColorDark: #495464;
+
+//border colors
+$borderColor: #d8dae5;
+$borderColorDark: #8f95b2;
+
+//text colors
+$textColor: #474d66;
+$textLightColor: #fafbff;
+
+//font defaults
+$fontFamily: "SF UI Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+"Segoe UI Symbol";
+$fontSmall: 14px;
+$fontNormal: 16px;
+$fontLarge: 18px;
+$lineHeight: 1.3;
+
+//border radius
+$borderRadius: 4px;
+
+//action colors
+$default: #edeff5;
+$defaultDark: #d8dae5;
+$primary: #005691;
+$primaryDark: #004a7c;
+$danger: #fd5d5d;
+$dangerDark: #dd4a48;
+$warning: #ffb020;
+$warningDark: #ec9b3b;
+$success: #52bd95;
+$successDark: #429777;
+
+// media
+$media-small: 480px;
+$media-medium: 768px;
+$media-large: 992px;

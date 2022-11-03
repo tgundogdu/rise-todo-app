@@ -1,0 +1,22 @@
+@use "./_variable" as var;
+
+body {
+  background-color: var.$bgColorWhite;
+  margin: 0;
+  padding: 0;
+  padding: 20px;
+  font-size: var.$fontNormal;
+  color: var.$textColor;
+  font-family: var.$fontFamily;
+  line-height: var.$lineHeight;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}

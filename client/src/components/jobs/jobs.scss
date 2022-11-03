@@ -1,0 +1,58 @@
+@use "../../assets/styles/variable" as var;
+
+.o-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  border-radius: 3px;
+  overflow: hidden;
+  thead {
+    tr {
+      background-color: var.$formBgColorDark;
+      th {
+        border-color: transparent;
+        color: #f0f5f9;
+      }
+      &.o-filters {
+        background-color: var.$formBgColor;
+        th {
+          padding: 8px;
+        }
+      }
+      .o-sortable {
+        user-select: none;
+        cursor: pointer;
+      }
+    }
+  }
+  tbody {
+    tr {
+      &:nth-child(odd) {
+        background-color: #f2f2f2;
+      }
+      &:nth-child(even) {
+        background-color: #ffffff;
+      }
+    }
+  }
+  th,
+  td {
+    text-align: left;
+    border: solid 1px #dddddd;
+    padding: 5px 8px;
+  }
+  .o-fixed {
+    width: 100px;
+    white-space: nowrap;
+  }
+  .o-filter-wrapper {
+    display: flex;
+    justify-content: space-between;
+    .o-search {
+      position: relative;
+    }
+  }
+  .o-center {
+    text-align: center;
+  }
+}

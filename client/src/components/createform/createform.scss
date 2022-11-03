@@ -1,0 +1,38 @@
+@use "../../assets/styles/variable" as var;
+@import "../../assets/styles/mixin";
+
+.o-create-form {
+  background-color: var.$formBgColor;
+  border: solid 1px var.$borderColor;
+  border-radius: var.$borderRadius;
+  padding: 30px;
+  .o-form {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    div {
+      &:nth-child(1) {
+        flex: 1 1 0px;
+      }
+    }
+    @include screen_size(xs) {
+      flex-direction: column;
+      div{
+        width: 100%;
+      }
+    }
+    @include screen_size(sm) {
+      flex-direction: column;
+      div{
+        width: 100%;
+      }
+    }
+  }
+  .o-action {
+    text-align: right;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

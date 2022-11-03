@@ -1,0 +1,18 @@
+@use "./variable" as var;
+
+
+@mixin screen_size($media) {
+  @if ($media == xs) {
+    @media (max-width: var.$media-small) {
+      @content;
+    }
+  } @else if ($media == sm) {
+    @media (min-width: var.$media-small) and (max-width: var.$media-medium) {
+      @content;
+    }
+  } @else if ($media == md) {
+    @media (min-width: var.$media-medium) and (max-width: var.$media-large) {
+      @content;
+    }
+  }
+}
