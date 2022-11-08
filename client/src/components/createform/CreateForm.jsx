@@ -65,10 +65,6 @@ const CreateForm = () => {
             <Button appearance="success">Create</Button>
           </FormInput>
         </div>
-{/*         <div className="o-action">
-          <Button appearance="warning">Generate Random Job</Button>
-          <Button appearance="success">Create Job</Button>
-        </div> */}
       </div>
     </form>
   );

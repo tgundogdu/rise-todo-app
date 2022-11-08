@@ -4,9 +4,9 @@ class PriorityServices {
   static getPriorities = async () => {
     try {
       const result = await customAxios.get(`${baseUrl}/priorities`);
-      return result.data;
+      return result;
     } catch (error) {
-      throw error.response.data;
+      throw error.response;
     }
   };
 }

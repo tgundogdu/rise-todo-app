@@ -7,16 +7,20 @@ import { fillJobs, setPriorities } from "../redux/features/jobSlice";
 const Home = () => {
   const dispatch = useDispatch();
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   const loadPriorities = () => {
     PriorityServices.getPriorities()
       .then((response) => {
-        dispatch(setPriorities(response));
+        dispatch(setPriorities(response.data));
         setLoading(false);
       })
       .catch((error) => {
         setLoading(false);
-        console.log(error);
+        const msg =
+          error?.data?.message ||
+          "Priority service not working. Please run backend app in server file.";
+        setError(msg);
       });
   };
 
@@ -36,6 +40,8 @@ const Home = () => {
 
   return loading ? (
     <h3>Loading...</h3>
+  ) : error ? (
+    <div className="error-msg">{error}</div>
   ) : (
     <>
       <CreateForm />

@@ -20,3 +20,12 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
+
+.error-msg{
+  border: solid 1px var.$dangerDark;
+  border-radius: var.$borderRadius;
+  padding: 20px;
+  background-color: rgba(221, 74, 72, .2);
+  color: var.$dangerDark;
+  font-weight: bold;
+}

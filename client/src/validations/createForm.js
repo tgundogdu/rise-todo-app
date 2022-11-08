@@ -11,8 +11,8 @@ const validate = (values) => {
     errors.title = "Job title is required.";
   } else if (!/^.{1,70}$/.test(values.title)) {
     errors.title = "Job title should be max 255 char.";
-  } else if (!/^[a-zA-Z ]+$/.test(values.title))
-    errors.title = "Only english letters acceptable";
+  } else if (!/^[a-zA-Z0-9 ]+$/.test(values.title))
+    errors.title = "Only alphanumeric characters acceptable";
 
   if (!values.priority) {
     errors.priority = "Priority is required.";
