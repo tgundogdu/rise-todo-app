@@ -9,7 +9,7 @@ const App = () => {
     <Provider store={store}>
       <div className="app">
         <h1>rise-todo-app</h1>
-        <h5>react, redux, scss, hooks, webpack, axios</h5>
+        <h5>react, redux, scss, hooks, webpack, axios, nodejs, eslint, localstorage, regex</h5>
         <Home />
       </div>
     </Provider>
